@@ -11,6 +11,7 @@ import Cart from './Pages/Cart';
 import { Poster } from './Components/Poster/Poster';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Shop />} /> {/* Catch-all for unknown routes */}
       </Routes>
-     
+     <Footer/>
     </BrowserRouter>
   </div>
   );

@@ -1,4 +1,9 @@
-
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
   .poster img{
     height: 700px;
     width: 1220px;
@@ -19,8 +24,8 @@
 
 }
 .images{
-  height: 200px;
-  width: 200px;
+  /* height: 200px;
+  width: 200px; */
 }
 
 
@@ -61,8 +66,7 @@
 }
 .new-collection{
   position: relative;
-  top: 170px;
-  left: 500px;
+ 
 }
 .new-collection hr{
 
@@ -99,8 +103,8 @@
   display: flex;                
   flex-wrap: wrap;               
   justify-content: space-between; 
-  max-width: 1200px; 
-  margin-left: -500px;
+  max-width: 100%; 
+  /* margin-left: -500px; */
                
 
 }
@@ -112,11 +116,11 @@
 }
 
 .card {
-  width: 800px;
-  height: 400px;
+  width: 100%;
+
   border-radius: 5px;
   background-image: linear-gradient(pink, white);
-  margin-left: -270px;
+
 
 }
 .card h2{
@@ -197,9 +201,9 @@ input {
   height: 30px;
   width: 30px;
   gap: 10px;
-  margin: 345px;
+  /* margin: 345px; */
   position: relative;
-  top: -340px;
+  /* top: -340px; */
 
 }
 
