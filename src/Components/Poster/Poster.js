@@ -19,6 +19,10 @@ import instagram from '../Assets/instagram icon.png';
 import whatsapp from '../Assets/whatsapp icon.png';
 import email from '../Assets/email icon.png';
 
+
+
+
+
 export const Poster = ({ handleClick }) => {
   console.log('handleClick received:', handleClick);
   const products = [
