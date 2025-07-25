@@ -128,12 +128,7 @@ const Cart = ({ cartItems }) => {
           </li>
         ))}
       </ul>
-      <div className='social-media1'>
-        <h4><b>DM For More Details<hr /></b></h4>
-        <img src='whatsapp icon.png'/>
-        
-
-      // </div>
+    
       
     </div>
   );
