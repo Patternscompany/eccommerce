@@ -1,12 +1,12 @@
-name: Deploy React App to GoDaddy via FTP
+name: React FTP Deploy to GoDaddy
 
 on:
   push:
     branches:
-      - main   # or 'master', depending on your branch
+      - main  # change if your branch is different
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,11 +16,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Build React App
         run: npm run build
 
-      - name: Upload via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+      - name: Deploy to GoDaddy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
